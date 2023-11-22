@@ -22,8 +22,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        LoopView loopView = (LoopView) findViewById(R.id.loopView);
+        LoopView loopView = (LoopView) findViewById(R.id.loopView1);
+        LoopView loopView5 = (LoopView) findViewById(R.id.loopView5);
+        LoopView loopView6 = (LoopView) findViewById(R.id.loopView6);
         initLoopView(loopView);
+        initLoopView(loopView5);
+        initLoopView(loopView6);
 
         LoopView loopView2 = (LoopView) findViewById(R.id.loopView2);
         initLoopView(loopView2);

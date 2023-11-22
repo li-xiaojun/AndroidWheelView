@@ -15,13 +15,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <com.weigan.loopview.LoopView
+    <LinearLayout
         android:layout_marginTop="10dp"
-        android:id="@+id/loopView"
+        android:paddingHorizontal="50dp"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        app:awv_textsize="18"
-        app:awv_isLoop="false" />
+        android:layout_height="wrap_content">
+
+        <com.weigan.loopview.LoopView
+            android:id="@+id/loopView1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            app:awv_textsize="20"
+            app:awv_isLoop="false" />
+        <com.weigan.loopview.LoopView
+            android:id="@+id/loopView5"
+            android:layout_width="50dp"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            app:awv_textsize="20"
+            app:awv_isLoop="false" />
+        <com.weigan.loopview.LoopView
+            android:id="@+id/loopView6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            app:awv_textsize="20"
+            app:awv_isLoop="false" />
+
+    </LinearLayout>
 
     <Button
         android:text="选中第4个位置"
